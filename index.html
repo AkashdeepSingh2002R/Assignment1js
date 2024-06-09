@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>See 'N' Say Storymaker</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="normalize.css">
+</head>
+<body>
+    <!--the page is divided into two panels and left panel is visual interface 
+    whereas right panel is for interaction -->
+    <div class="container">
+        <div class="left-panel">
+            <!-- left panel is divided into 5 rows and columns representing the word array in js-->
+            <div class="row">
+                <div class="cell" style="background-color: #FF5733;"><h2>1</h2><img src="cat.png" alt="Cat"><div>Cat</div></div>
+                <div class="cell" style="background-color: #33FF57;"><h2>2</h2><img src="runs.jpg" alt="Runs"><div>Runs</div></div>
+                <div class="cell" style="background-color: #3357FF;"><h2>3</h2><img src="big.jpeg" alt="Big"><div>Big</div></div>
+                <div class="cell" style="background-color: #FF33A6;"><h2>4</h2><img src="mouse.jpeg" alt="Mouse"><div>Wall</div></div>
+                <div class="cell" style="background-color: #c50dee;"><h2>5</h2><img src="forest.jpeg" alt="Forest"><div>Forest</div></div>
+            </div>
+            <div class="row">
+                <div class="cell" style="background-color: #FF5733;"><img src="dog.jpg" alt="Dog"><div>Dog</div></div>
+                <div class="cell" style="background-color: #33FF57;"><img src="jumps.jpg" alt="Jumps"><div>Jumps</div></div>
+                <div class="cell" style="background-color: #3357FF;"><img src="small.jpeg" alt="Small"><div>Small</div></div>
+                <div class="cell" style="background-color: #FF33A6;"><img src="bird.jpeg" alt="Bird"><div>Cave</div></div>
+                <div class="cell" style="background-color: #c50dee;"><img src="desert.webp" alt="Desert"><div>Desert</div></div>
+            </div>
+            <div class="row">
+                <div class="cell" style="background-color: #FF5733;"><img src="elephant.jpg" alt="Elephant"><div>Elephant</div></div>
+                <div class="cell" style="background-color: #33FF57;"><img src="swims.jpg" alt="Swims"><div>Swims</div></div>
+                <div class="cell" style="background-color: #3357FF;"><img src="fast.jpeg" alt="Fast"><div>Fast</div></div>
+                <div class="cell" style="background-color: #FF33A6;"><img src="fish.jpg" alt="Fish"><div>Stone</div></div>
+                <div class="cell" style="background-color: #c50dee;"><img src="ocean.jpeg" alt="Ocean"><div>Ocean</div></div>
+            </div>
+            <div class="row">
+                <div class="cell" style="background-color: #FF5733;"><img src="lion.jpg" alt="Lion"><div>Lion</div></div>
+                <div class="cell" style="background-color: #33FF57;"><img src="flies.jpg" alt="Flies"><div>Flies</div></div>
+                <div class="cell" style="background-color: #3357FF;"><img src="slow.jpeg" alt="Slow"><div>Slow</div></div>
+                <div class="cell" style="background-color: #FF33A6;"><img src="bear.jpg" alt="Monkey"><div>Hill</div></div>
+                <div class="cell" style="background-color: #c50dee;"><img src="mountain.jpeg" alt="Mountain"><div>Mountain</div></div>
+            </div>
+            <div class="row">
+                <div class="cell" style="background-color: #FF5733;"><img src="tiger.jpg" alt="Tiger"><div>Tiger</div></div>
+                <div class="cell" style="background-color: #33FF57;"><img src="climb.jpg" alt="Climbs"><div>Climbs</div></div>
+                <div class="cell" style="background-color: #3357FF;"><img src="happy.jpeg" alt="Tired"><div>Tired</div></div>
+                <div class="cell" style="background-color: #FF33A6;"><img src="zebra.jpeg" alt="Zebra"><div>Tree</div></div>
+                <div class="cell" style="background-color: #c50dee;"><img src="river.jpeg" alt="River"><div>River</div></div>
+            </div>
+        </div>
+             <div class="right-panel">
+            <div class="buttons-top">
+                <button class="circle-button" data-category="nouns" style="background-color: #FF5733;">1</button>
+                <button class="circle-button" data-category="verbs" style="background-color: #33FF57;">2</button>
+                <button class="circle-button" data-category="adjectives" style="background-color: #3357FF;">3</button>
+                <button class="circle-button" data-category="nouns2" style="background-color: #FF33A6;">4</button>
+                <button class="circle-button" data-category="places" style="background-color: #c50dee;">5</button>
+            </div>
+            <!-- this div is for display area-->
+            <div class="display-area" id="displayArea">
+                <div id="outputText"></div>
+            </div>
+            <!-- this is for dragon image-->
+            <div class="dragon">
+                <img src="dragon.png" alt="dragon">
+            </div>
+            <!-- this is for speaker image-->
+            <div class="speaker">
+                <img src="speaker.png" alt="Speaker">
+            </div>
+            <!-- two buttons surprise and reset button-->
+            <div class="buttons-bottom">
+                <button id="generateStoryButton" class="circle-button" style="background-color: #FF5733;">Surprise</button>
+                <button id="resetButton" class="circle-button" style="background-color: #33FF57;">Reset</button>
+            </div>
+        </div>
+    </div>
+    <!-- link to js-->
+    <script src="app.js"></script>
+</body>
+</html>
